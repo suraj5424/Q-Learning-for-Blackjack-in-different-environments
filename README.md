@@ -11,13 +11,16 @@ Q-Learning is a model-free reinforcement learning algorithm used to find the opt
 Key components of Q-Learning:
 - **Q-Value (Q(s, a))**: Represents the expected utility of taking action `a` in state `s` and following the optimal policy thereafter.
 - **Bellman Equation**: The core of Q-Learning, used to update Q-values:
-  \[
-  Q(s,a) \leftarrow Q(s,a) + \alpha \left[ r + \gamma \max_{a'} Q(s', a') - Q(s, a) \right]
-  \]
-  - \(\alpha\): Learning rate
-  - \(\gamma\): Discount factor
-  - \(r\): Reward received
-  - \(s'\): New state after action \(a\)
+
+$$
+Q(s,a) \leftarrow Q(s,a) + \alpha \left[ r + \gamma \max_{a'} Q(s', a') - Q(s, a) \right]
+$$
+
+- $\alpha$: Learning rate
+- $\gamma$: Discount factor
+- $r$: Reward received
+- $s'$: New state after action $a$
+
 
 ### Blackjack Environment
 
